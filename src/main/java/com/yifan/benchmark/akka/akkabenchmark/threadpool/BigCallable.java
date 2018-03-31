@@ -20,7 +20,7 @@ public class BigCallable implements Runnable {
     @Override public void run() {
 
         try {
-            Path path = Paths.get("/home/steven/workplace/demos/akka-benchmark/tmp/io_" + id + ".io");
+            Path path = Paths.get("tmp/io_" + id + ".io");
 
             try (BufferedWriter writer = Files.newBufferedWriter(path)) {
                 writer.write("Hello World ~~~");
